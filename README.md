@@ -7,5 +7,6 @@ Technology Stack of this Tutorial:
 - Typescript
 - SCSS
 - Next
+- Yarn
 
 Despite the tutorial asking for Tailwind CSS usage, I won't be using this in this project because I want to focus on Next so I will stick to what I already know.
