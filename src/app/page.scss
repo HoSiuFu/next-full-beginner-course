@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .h1 {
+    color: $dark-grey100;
+  }
+
+  .new {
+    display: flex;
+    padding: 5px;
+    background: $grey;
+    border: 1px solid $dark-grey100;
+    text-decoration: none;
+    color: $dark-grey100;
+    border-radius: 0.25rem;
+    width: 4rem;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.list {
+  padding: 0.25rem 0.75rem;
+  align-self: flex-start;
+}
