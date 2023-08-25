@@ -1,0 +1,19 @@
+.todo-item {
+    display: flex;
+    gap: 0.125rem;
+    align-items: center;
+
+    .checkbox {
+        cursor: pointer;
+
+        &:checked + .label {
+            text-decoration: line-through;
+            color: $dark-grey50;
+        }
+    }
+
+    .label {
+        cursor: pointer;
+        color: $dark-grey100;
+    }
+}

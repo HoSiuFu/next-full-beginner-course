@@ -1,0 +1,49 @@
+.new-main {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 100%;
+    
+    .h1 {
+        color: $dark-grey100;
+    }
+
+    .form {
+        display: flex;
+        gap: 0.125rem;
+        flex-flow: column;
+
+        .input {
+            border: 0.125rem solid $dark-grey100;
+            border-radius: 0.50rem;
+            padding: 0.25rem 0.125rem;
+            background-color: $grey;
+            color: $dark-grey100;
+
+            &:hover, &:focus{
+                background-color: $white;
+            }
+        }
+
+        .button-div {
+            display: flex;
+            gap: 0.25rem;
+            align-self: flex-end;
+
+            .button {
+                display: flex;
+                padding: 5px;
+                background: $grey;
+                border: 0.075rem solid $dark-grey100;
+                text-decoration: none;
+                color: $dark-grey100;
+                border-radius: 0.25rem;
+                width: 4rem;
+                justify-content: center;
+                cursor: pointer;
+                max-width: 6rem;
+                width: 6rem;
+            }
+        }
+    }
+}

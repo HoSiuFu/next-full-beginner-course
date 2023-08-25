@@ -1,0 +1,23 @@
+@import "./typo";
+@import "./colors";
+
+@import "../page.scss";
+@import "../new/new.scss";
+@import "../components/TodoItem/TodoItem/todoItem.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden auto;
+  padding: 1rem;
+  background-color: $grey;
+}
