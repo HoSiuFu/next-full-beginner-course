@@ -48,3 +48,9 @@ export const updateTodoForm = async (data: FormData) => {
 
     redirect("/")
 }
+
+export const deleteTodo = async (id: string) => {
+    "use server"
+
+    await prisma.todo.delete({ where: {id} })
+}   

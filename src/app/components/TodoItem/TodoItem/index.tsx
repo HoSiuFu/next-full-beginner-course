@@ -3,9 +3,12 @@
 import TodoProps from "./type"
 import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
 
 const TodoItem = (props: TodoProps) => {
-    return <li className="todo-item">
+    const [deleted, setDeleted] = useState(false);
+
+    return <li className={`todo-item ${deleted ? "deleted": ""}`}>
         <input id={props.id} 
         type="checkbox" 
         className="checkbox"
@@ -15,6 +18,10 @@ const TodoItem = (props: TodoProps) => {
             {props.title}
         </label>
         <Link href={`/todo/update/${props.id}`} className="p icon" ><Image src="/pen-to-square-solid.svg" width={12} height={12} alt="Edit" /></Link>
+        <Image className="p icon" src="/circle-xmark-regular.svg" width={12} height={12} alt="Delete" onClick={() => {
+            setDeleted(true)
+            props.deleteTodo(props.id)
+        }} />
     </li>
 }
 
