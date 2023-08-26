@@ -6,6 +6,7 @@ export interface Todo {
 
 interface TodoProps extends Todo {
     updateTodo: (updatedTodo: Todo) => void
+    deleteTodo: (id: string) => void
 }
 
 export default TodoProps

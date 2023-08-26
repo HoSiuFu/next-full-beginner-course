@@ -3,6 +3,10 @@
     gap: 0.125rem;
     align-items: center;
 
+    &.deleted {
+        display: none;
+    }
+
     .checkbox {
         cursor: pointer;
 
@@ -20,6 +24,7 @@
     .icon {
         opacity: 0;
         margin-left: 0.25rem;
+        cursor: pointer;
     }
 
     &:hover > .icon {
