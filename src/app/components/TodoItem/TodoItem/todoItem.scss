@@ -16,4 +16,13 @@
         cursor: pointer;
         color: $dark-grey100;
     }
+
+    .icon {
+        opacity: 0;
+        margin-left: 0.25rem;
+    }
+
+    &:hover > .icon {
+        opacity: 1;
+    }
 }
